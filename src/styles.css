@@ -1,0 +1,14 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
