@@ -3,7 +3,8 @@
 	import questions from '$lib/questions/questions.json';
 	import 'katex/dist/katex.min.css';
 	import katex from 'katex';
-	import { onMount } from 'svelte';
+	import { createEventDispatcher, onMount } from 'svelte';
+	import type { QuestionType } from '$lib/types';
 
 
 
@@ -17,7 +18,7 @@
 		})
 	}
 	function pickRandomQuestion() {
-		const randomIndex = (0);
+		const randomIndex = (Math.floor(Math.random() * questions.length));
 		return questions[randomIndex];
 	}
 	function renderTextWithMathMode(text: string): string {
@@ -34,13 +35,12 @@
 	}
 
 
-	let question = pickRandomQuestion();
-	function handleSubmit(event: Event) {
-		event.preventDefault();
-		const formData = new FormData(event.target as HTMLFormElement);
-		const selectedOption = formData.get('option');
-		console.log('Selected Option:', selectedOption);
-		// You can add further processing logic here, such as checking the selected option against the correct answer
+	let question:QuestionType = pickRandomQuestion();
+
+	const dispatch = createEventDispatcher();
+	function handleSubmit(event: CustomEvent<any>) {
+		const question: QuestionType = event.detail;
+		dispatch('formSubmitted', question);
 	}
 
 </script>
@@ -51,11 +51,13 @@
 <p>{@html renderTextWithMathMode(question.question)}</p>
 	<img src="{question.image}" alt=" Image" />
 </div>
+
+<div class="answer">
 {#if question.options}
 
 	<form on:submit={handleSubmit}>
 		{#each question?.options as option}
-			<label>
+			<label class="radio">
 				<input type="radio" name="option" value={option} required>
 				{@html renderTextWithMathMode(option)}
 			</label><br>
@@ -64,6 +66,7 @@
 	</form>
 
 {/if}
+</div>
 
 <style>
 
@@ -73,17 +76,28 @@
       align-items: center;
       display: flex;
 			height: 100%;
+			margin: 0 auto;
+			width: auto;
 	}
 	h1 {
 			font-family: Arial,serif;
 			justify-content: center;
 			align-items: center;
 			display: flex;
+			margin: 0 auto;
+      text-align: center;
 	}
 	p{
 			font-family: Arial;
       align-items: center;
       justify-content: center;
+			margin: 0 auto;
+      text-align: center;
+	}
+	.question{
+			max-width: 1000px;
+			text-align: center;
+			margin: 0 auto;
 	}
 
 </style>
