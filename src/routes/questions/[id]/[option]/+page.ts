@@ -1,11 +1,8 @@
-export function load({ params }){
-
+export function load({ params }) {
 	const question = params.id;
 	const answer = params.option;
-	return{
+	return {
 		id: question,
 		answer: answer
-
-	}
-
+	};
 }

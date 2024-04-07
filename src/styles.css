@@ -1,14 +1,14 @@
 * {
-    position: relative;
-    box-sizing: border-box;
+	position: relative;
+	box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
+html,
+body {
+	margin: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
-

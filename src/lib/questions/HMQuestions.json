@@ -1,6 +1,6 @@
 [
 	{
-		"question": "A mass of 400 $$g$$ is connected to a spring on a frictionless surface, the spring constant is $$0.06 N cm^{-1} $$. What is the magnitude of acceleration when the mass is 20 $$cm$$ from equilibrium?",
+		"question": "A mass of 400g is connected to a spring on a frictionless surface, the spring constant is $$ N cm^{-1} $$. What is the magnitude of acceleration when the mass is 20 cm from equilibrium?",
 		"image": "/src/lib/images/HM0001.png",
 		"options": ["$$0.03 m s^{-2}$$", "$$0.06 m s^{-2}$$", "$$0.6 m s^{-2}$$", "$$3 m s^{-2}$$"],
 		"answer": 3,
