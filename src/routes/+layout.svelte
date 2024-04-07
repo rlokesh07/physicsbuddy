@@ -10,7 +10,6 @@
 
 	<div class="modes">
 
-		<a href="/rotational_kinematics">Rotational Kinematics</a>
 		<a href="/harmonic_motion">Harmonic Motion</a>
 
 	</div>

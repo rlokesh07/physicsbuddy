@@ -2,63 +2,53 @@
 
 	import questions from '$lib/questions/questions.json';
 	import 'katex/dist/katex.min.css';
-	import katex from 'katex';
+
+
 	import { createEventDispatcher, onMount } from 'svelte';
 	import type { QuestionType } from '$lib/types';
+	import { renderTextWithMathMode } from '$lib/KaTeX';
 
 
 
-	const fontMacro = {
-		'\\times': '\\text{\\fontfamily{Times New Roman}\\selectfont}'
-	}
-	function renderWithFont(text: string) {
-		return katex.renderToString(text, {
-			// Pass custom macros to KaTeX
-			macros: fontMacro,
-		})
-	}
 	function pickRandomQuestion() {
 		const randomIndex = (Math.floor(Math.random() * questions.length));
 		return questions[randomIndex];
 	}
-	function renderTextWithMathMode(text: string): string {
-		const mathModeRegex = /\$\$(.*?)\$\$/g;
-		let renderedText = text;
-
-		// Replace math mode segments with their rendered counterparts
-		renderedText = renderedText.replace(mathModeRegex, (_, segment) => {
-			return renderWithFont(segment);
-		});
-
-		// Split the text into segments based on the replaced math mode segments
-		return renderedText;
-	}
 
 
-	let question:QuestionType = pickRandomQuestion();
+
+	let question: QuestionType = pickRandomQuestion();
+
+	onMount(() => {
+		question =  pickRandomQuestion();
+	});
 
 	const dispatch = createEventDispatcher();
-	function handleSubmit(event: CustomEvent<any>) {
-		const question: QuestionType = event.detail;
-		dispatch('formSubmitted', question);
+	function handleSubmit(event: Event) {
+		const form = event.target as HTMLFormElement;
+		const formData = new FormData(form);
+		const selectedOption = formData.get('option');
+		dispatch('formSubmitted', {question, selectedOption});
 	}
-
 </script>
 
 
 <div class="question">
 	<h1>{question.topic}</h1>
 <p>{@html renderTextWithMathMode(question.question)}</p>
+
+	{#if question.image}
 	<img src="{question.image}" alt=" Image" />
+	{/if}
 </div>
 
 <div class="answer">
 {#if question.options}
 
 	<form on:submit={handleSubmit}>
-		{#each question?.options as option}
+		{#each question?.options as option, index}
 			<label class="radio">
-				<input type="radio" name="option" value={option} required>
+				<input type="radio" name="option" value={index} required>
 				{@html renderTextWithMathMode(option)}
 			</label><br>
 		{/each}

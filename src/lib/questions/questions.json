@@ -8,11 +8,35 @@
       "$$0.6 m s^{-2}$$",
       "$$3 m s^{-2}$$"
     ],
-    "answer": "$$3 m s^{-2$$}",
+    "answer": 3,
     "difficulty": "easy",
     "topic": "Harmonic Motion",
-    "id": "HM0001"
+    "id": "HM0001",
+    "explanation": ["Because the units on the spring constant and distance match ($$cm$$) we can simply multiply",
+      "$$F = kx = 1.2 N$$",
+      "Then use Newton's Second Law  ($$F=MA$$)",
+      "$$a = \\frac{F}{m} = \\frac{1.2 N}{0.40kg} = 3 m s^{-2}$$"]
 
-  }
+  },
+  {
+  "question": "A particle undergoes simple harmonic motion. Which of the following can be an expression of acceleration $$a$$ in terms of displacement $$x$$ and a constant value $$k$$?",
+  "image":  null,
+  "options": [
+    "$$a=k^2x$$",
+    "$$a=-k^2x$$",
+    "$$a=-kx^2$$",
+    "$$a=kx^2$$"
+  ],
+  "answer": 1,
+    "difficulty": "easy",
+    "topic": "Harmonic Motion",
+  "id": "HM0002",
+  "explanation": ["In order for something to be simple harmonic motions, the acceleration has to be proportional to the displacement, and the acceleration and displacement are in opposite directions (because the spring pulls in the opposite direction). That means your displacement needs to be linear, and a negative sign to make the result negative when x is positive"]
+
+
+
+
+
+}
 
 ]
