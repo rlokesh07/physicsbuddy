@@ -3,7 +3,7 @@
 	export const prerender = false;
 	export let data;
 </script>
-
+<a href={`/modules/${data.topic}`}>{data.topic}</a>
 {#each questions as question}
 	{#if question.topic === data.topic}
 		<div>

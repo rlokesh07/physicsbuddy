@@ -55,4 +55,8 @@
 		transform: translate(-50%, -50%);
 		display: inline-block;
 	}
+
+  h2, h1 {
+      font-family: system-ui;
+  }
 </style>

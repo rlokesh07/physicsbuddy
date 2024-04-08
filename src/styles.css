@@ -1,14 +1,17 @@
 * {
 	position: relative;
 	box-sizing: border-box;
+	font-family: system-ui;
 }
 
 html,
 body {
 	margin: 0;
+	font-family: system-ui;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
+	font-family: system-ui;
 }
