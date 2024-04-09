@@ -1,4 +1,5 @@
+<script>
+	import Authenticate from '$lib/components/Authenticate.svelte';
+</script>
 
-<form method="POST">
-	<button>log in</button>
-</form>
+<Authenticate />
