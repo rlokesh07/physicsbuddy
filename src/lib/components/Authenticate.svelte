@@ -80,16 +80,15 @@
 		</button>
 	</form>
 	<div class="options">
-		<p>Or</p>
 		{#if register}
 			<div>
-				<p>Already have an account?</p>
-				<p on:click={handleRegister} on:keydown={() => {}}>Login</p>
+				<p>Already have an account? </p>
+				<p class="clicker" on:click={handleRegister} on:keydown={() => {}}>Login</p>
 			</div>
 		{:else}
-			<div>
-				<p>Don't have an account?</p>
-				<p on:click={handleRegister} on:keydown={() => {}}>Register</p>
+			<div class="registerLogin">
+				<p>Don't have an account? </p>
+				<p class="clicker " on:click={handleRegister} on:keydown={() => {}}>Register</p>
 			</div>
 		{/if}
 	</div>
@@ -97,24 +96,53 @@
 
 <style>
 
-	.authContainer{
+    .registerLogin {
+        display: flex;
+        align-items: center;
+				gap: 5px;
+    }
+
+		.clicker{
+        user-select: none;
+		}
+
+    .authContainer{
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			padding: 24px;
+			padding: 4px;
 	}
 	form{
 			display: flex;
 			flex-direction: column;
-			gap: 8px;
 			width: 400px;
 			max-width: 100%;
 			margin: 0 auto;
 	}
 
-	form input {
-			width: 100%;
+  input{
+      height: 40px;
+      width: 100%;
+			border: black solid 2px;
+      border-radius: 3px;
+      font-size: 14px;
+			background: white;
+  }
+  button {
+      margin-top: 15px;
+      width: 100%;
+      background-color: #ffffff;
+      color: #080710;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 3px; /* Match the border radius of the input fields */
+      height: 40px; /* Match the height of the input fields */
+      cursor: pointer;
+  }
+	.clicker:hover{
+			color: hsla(204, 41%, 25%, 1);
+			text-decoration: underline;
 	}
 
 </style>

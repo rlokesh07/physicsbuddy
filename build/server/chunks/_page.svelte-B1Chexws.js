@@ -1,5 +1,5 @@
 import { c as create_ssr_component, v as validate_component, h as each } from './ssr-Ll_B-SDe.js';
-import { q as questions } from './questions-qRdLVyBC.js';
+import { q as questions } from './questions-BXhhC-HB.js';
 import { r as renderTextWithMathMode } from './AnswerPage.svelte_svelte_type_style_lang-xA5IKkOT.js';
 import 'katex';
 
@@ -34,4 +34,4 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-C45-rUN9.js.map
+//# sourceMappingURL=_page.svelte-B1Chexws.js.map

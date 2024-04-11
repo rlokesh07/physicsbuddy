@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { onMount } from 'svelte';0
+	import '../styles.css'
+	import { onMount } from 'svelte';
 	import { auth, db } from '$lib/firebase/firebase';
 	import {getDoc, doc, setDoc} from 'firebase/firestore';
 	import {authStore} from '../store/store';
@@ -57,7 +58,7 @@
 </script>
 
 <nav>
-	<a href="/">Physics Buddy</a>
+	<a href="/">Study Sign</a>
 
 	<div class="modes">
 		<a href="/HarmonicMotion">Harmonic Motion</a>
@@ -68,25 +69,36 @@
 
 <slot />
 
+
+
 <style>
 	nav {
 		display: flex;
-		width: 100%;
+		width: 100% - 40px;
 		height: 3rem;
 		align-items: center;
 		justify-content: space-between;
+		background: hsla(204, 41%, 25%, 1);
+			border: #656565 solid 3px;
+			padding: 10px;
 	}
 
 	a {
 		font-family: system-ui;
-		color: inherit;
+			font-weight: bold;
+			font-size: 25px;
+		color: white;
 		text-decoration: none;
-		border: 2px hidden #000; /* Border style */
-		border-radius: 3px;
-		outline: 2px solid grey; /* Outline style */
-		outline-offset: 4px; /* Offset value */
+      text-shadow: 2px 2px hsla(80, 0%, 50%, 1);
+
+
 	}
 
+	a:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 5px;
+      text-decoration-skip-ink: none;
+  }
 	.modes {
 		display: flex;
 		gap: 1em;

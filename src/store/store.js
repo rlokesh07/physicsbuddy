@@ -15,10 +15,19 @@ export const authHandlers = {
 		await createUserWithEmailAndPassword(auth, email, pass)
 	},
 	login: async (/** @type {string} */ email, /** @type {string} */ pass) => {
+
 		await signInWithEmailAndPassword(auth, email, pass)
 	},
 	logout: async () =>{
 		await signOut(auth)
+	},
+	getEmail: () => {
+		const user = auth.currentUser;
+		if (user) {
+			return user.email;
+		} else {
+			return null; // Or throw an error, depending on your preference
+		}
 	}
 
 }

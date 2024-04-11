@@ -6,12 +6,26 @@
 	import type { QuestionType } from '$lib/types';
 	import { renderTextWithMathMode } from '$lib/KaTeX';
 
+	export let question: QuestionType;
+
+
+
+	onMount(() => {
+		// Set the image source based on question.image
+		const imageElement = document.querySelector('.questionImage') as HTMLImageElement;
+		if (question.image) {
+			imageElement.src = `${question.image}`;
+		}
+	});
+
+
+
 	function pickRandomQuestion() {
 		const randomIndex = Math.floor(Math.random() * questions.length);
 		return questions[randomIndex];
 	}
 
-	export let question: QuestionType;
+
 
 	const dispatch = createEventDispatcher();
 	function handleSubmit(event: Event) {
@@ -19,7 +33,10 @@
 		const formData = new FormData(form);
 		const selectedOption = formData.get('option');
 		dispatch('formSubmitted', { question, selectedOption });
+
+
 	}
+
 </script>
 
 <div class="question">
@@ -27,7 +44,7 @@
 	<p>{@html renderTextWithMathMode(question.question)}</p>
 
 	{#if question.image}
-		<img src={question.image} alt=" Image" />
+		<img class="questionImage" src="/src/lib/images/HM0003.png" alt=" Image" />
 	{/if}
 </div>
 

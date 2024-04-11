@@ -18,4 +18,4 @@
 	};
 </script>
 
-<Question on:formSubmitted={handleSubmit} question={questions[index]} />
+<Question on:formSubmitted={handleSubmit} question={questions[index]} image={questions[index].image} />

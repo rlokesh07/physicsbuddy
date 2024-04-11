@@ -1,7 +1,7 @@
 const questions = [
   {
     question: "A mass of 400 $$g$$ is connected to a spring on a frictionless surface, the spring constant is $$0.06 N cm^{-1} $$. What is the magnitude of acceleration when the mass is 20 $$cm$$ from equilibrium?",
-    image: "/src/lib/images/HM0001.png",
+    image: "https://cdn.discordapp.com/attachments/744944331542233173/1227816707419279420/HM0001.png?ex=6629c86a&is=6617536a&hm=97adb473551b7055c8b1054a526575e751d20a5a27404e899a6956cbd227c4e4&",
     options: [
       "$$0.03 m s^{-2}$$",
       "$$0.06 m s^{-2}$$",
@@ -38,7 +38,7 @@ const questions = [
   },
   {
     question: "Which graph shows how the object's acceleration $$a$$ varies with time $$t$$?",
-    image: "/src/lib/images/HM0003.png",
+    image: "https://media.discordapp.net/attachments/744944331542233173/1227816723428937789/HM0003.png?ex=6629c86e&is=6617536e&hm=1ec72b036bbe851d7b50967bb8d059f3e4edc5c05221c77bc3c10b5637c141cb&=&format=webp&quality=lossless&width=368&height=437",
     options: [
       "a",
       "b",
@@ -55,7 +55,7 @@ const questions = [
   },
   {
     question: "The graph below shows how the displacement of $$x$$ of a particle undergoing simple harmonic motion. Which graph shows the object's velocity $$v$$ varies with time $$t$$?",
-    image: "/src/lib/images/HM0004.png",
+    image: "https://cdn.discordapp.com/attachments/744944331542233173/1227816736733266052/HM0004.png?ex=6629c871&is=66175371&hm=4d44cade3e328af8ecdd67ef5d270b20c34ce2a9d4c121fe3cb0d3173beda5d9&",
     options: [
       "a",
       "b",
@@ -72,7 +72,7 @@ const questions = [
   },
   {
     question: "A particle is moving in a straight line with an acceleration proportional to its displacement and\nopposite to its direction. What are the velocity and the acceleration of the particle when it is at its\nmaximum displacement?",
-    image: "/src/lib/images/HM0004.png",
+    image: "https://cdn.discordapp.com/attachments/744944331542233173/1227816748745621576/HM0005.png?ex=6629c874&is=66175374&hm=0a36a169a05ee763c3caccaa683da874033079bff0f730e5996468de3193f561&",
     options: [
       "a",
       "b",
@@ -126,4 +126,4 @@ const questions = [
 ];
 
 export { questions as q };
-//# sourceMappingURL=questions-qRdLVyBC.js.map
+//# sourceMappingURL=questions-BXhhC-HB.js.map
