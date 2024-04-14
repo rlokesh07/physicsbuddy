@@ -25,8 +25,10 @@
 	}
 	h1{
 			font-size: 50px;
+      text-shadow: 4px 4px 4px 4px hsla(204, 41%, 20%, 1);
+
 	}
 	h2{
-
+			color: black;
 	}
 </style>

@@ -1,14 +1,12 @@
 <script lang="ts">
-	import questions from '$lib/questions/questions.json';
 	import 'katex/dist/katex.min.css';
 
 	import { createEventDispatcher, onMount } from 'svelte';
 	import type { QuestionType } from '$lib/types';
 	import { renderTextWithMathMode } from '$lib/KaTeX';
+	import { questionsStore } from '../../store/store';
 
 	export let question: QuestionType;
-
-
 
 	onMount(() => {
 		// Set the image source based on question.image
@@ -17,15 +15,6 @@
 			imageElement.src = `${question.image}`;
 		}
 	});
-
-
-
-	function pickRandomQuestion() {
-		const randomIndex = Math.floor(Math.random() * questions.length);
-		return questions[randomIndex];
-	}
-
-
 
 	const dispatch = createEventDispatcher();
 	function handleSubmit(event: Event) {
@@ -38,7 +27,8 @@
 	}
 
 </script>
-
+<div class="fullContainer">
+<div class="questionBox">
 <div class="question">
 	<h1>{question.topic}</h1>
 	<p>{@html renderTextWithMathMode(question.question)}</p>
@@ -52,16 +42,21 @@
 	{#if question.options}
 		<form on:submit={handleSubmit}>
 			{#each question?.options as option, index}
-				<label class="radio">
-					<input type="radio" name="option" value={index} required />
+				<label class="radio" for="{`option${index}`}">
+					<input type="radio" id="{`option${index}`}" name="option" value={index} required />
+					<span class="radio-custom"></span>
 					{@html renderTextWithMathMode(option)}
 				</label><br />
+
 			{/each}
-			<button type="submit">Submit</button>
+			<div class="submit-button-container">
+				<button type="submit" class="submit-button">Submit</button>
+			</div>
 		</form>
 	{/if}
 </div>
-
+</div>
+</div>
 <style>
 	img {
 		font-family: Arial, serif;
@@ -79,6 +74,8 @@
 		display: flex;
 		margin: 0 auto;
 		text-align: center;
+    text-shadow: 0px 0px hsla(204, 41%, 20%, 1);
+			color: #10403B;
 	}
 	p {
 		font-family: Arial;
@@ -86,10 +83,43 @@
 		justify-content: center;
 		margin: 0 auto;
 		text-align: center;
+			font-weight: 400;
 	}
 	.question {
-		max-width: 1000px;
 		text-align: center;
 		margin: 0 auto;
+
+	}
+
+	.answer{
+			padding-left: 60px;
+	}
+	.fullContainer{
+			padding: 20px;
+			display: flex;
+			justify-content: center;
+
+	}
+	.questionBox{
+			background-color:white;
+			padding: 20px;
+      max-width: 60em;
+      border: #656565 solid 3px;
+	}
+  .submit-button {
+      background-color: hsla(204, 41%, 20%, 1);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+
+  }
+	.submit-button-container{
+			padding-top: 10px;
 	}
 </style>

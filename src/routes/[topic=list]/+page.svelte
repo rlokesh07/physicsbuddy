@@ -1,6 +1,22 @@
 <script lang="ts">
 	import questions from '$lib/questions/questions.json';
+	import { questionsStore, fetchQuestions } from '../../store/store';
+	import { onMount } from 'svelte';
+
 	export const prerender = false;
+
+	let questionList: QuestionType[] = [];
+	let loading:boolean = true;
+
+	const unsubscribe = questionsStore.subscribe(value => {
+		questionList = value.questions;
+		loading = value.loading;
+
+	});
+
+	onMount(async () =>{
+		await fetchQuestions();
+	})
 	export let data;
 </script>
 
@@ -22,12 +38,16 @@
 			<a href={`/modules/${data.topic}`}>{data.topic}</a>
 		</div>
 	</div>
-	{#each questions as question}
-		{#if question.topic === data.topic}
+	{#each questionList as question}
+			{#if question.topic === data.topic}
 			<div class="question">
-				<a href={`/questions/${question.id}`}>{question.id}</a>
+				<a href={`/questions/${question.id}`}>ID: {question.id}</a>
+				<p>Difficulty: {question.difficulty}</p>
+				<p>Accuracy: {(question.correct/question.attempted)*100}%</p>
+
 			</div>
-		{/if}
+
+			{/if}
 	{/each}
 
 </div>
@@ -45,9 +65,10 @@
 				padding: 5px;
 				max-width: 60rem;
 				width: 90%;
+				justify-content: space-evenly;
 
     }
-		a{
+		a, p{
 				text-decoration: none;
 				color: grey;
 		}
@@ -83,7 +104,7 @@
     .topGrid{
         display: flex;
         justify-content: center;
-        width: 95%;
+        width: 100%;
         max-width: 60rem;
         height: 50px;
         align-items: center;
@@ -93,7 +114,7 @@
     .three {
         display: flex;
         justify-content: center;
-				width: 90%;
+				width: 95%;
 				max-width: 60rem;
         height: 50px;
         background: white;

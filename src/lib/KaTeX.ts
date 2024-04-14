@@ -1,5 +1,4 @@
 import katex from 'katex';
-import questions from '$lib/questions/questions.json';
 
 const fontMacro = {
 	'\\times': '\\text{\\fontfamily{Times New Roman}\\selectfont}'
@@ -10,10 +9,7 @@ export function renderWithFont(text: string) {
 		macros: fontMacro
 	});
 }
-export function pickRandomQuestion() {
-	const randomIndex = Math.floor(Math.random() * questions.length);
-	return questions[randomIndex];
-}
+
 export function renderTextWithMathMode(text: string): string {
 	const mathModeRegex = /\$\$(.*?)\$\$/g;
 	let renderedText = text;

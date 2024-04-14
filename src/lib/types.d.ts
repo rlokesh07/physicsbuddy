@@ -1,4 +1,6 @@
 export interface QuestionType {
+	correct: number;
+	attempted: number;
 	question: string;
 	image: string | null;
 	options: string[];

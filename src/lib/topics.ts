@@ -5,7 +5,7 @@ export interface Topic {
 
 export const topics: Record<string, Topic> = {
 	HarmonicMotion: {
-		topic: 'Harmonic Motion',
+		topic: 'Simple Harmonic Motion',
 		questions: 'HMQuestions'
 	}
 };
