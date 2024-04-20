@@ -9,4 +9,7 @@ export interface QuestionType {
 	topic: string;
 	id: string;
 	explanation: string[];
+	type: string;
+	unit:string[];
+	formattedAnswer: string;
 }

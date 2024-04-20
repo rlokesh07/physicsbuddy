@@ -1,9 +1,7 @@
-import { t as topics } from "../../../chunks/topics.js";
+import { t as topics } from '../../../chunks/topics.js';
 function load({ params }) {
-  return {
-    topic: topics[params.topic].topic
-  };
+	return {
+		topic: topics[params.topic].topic
+	};
 }
-export {
-  load
-};
+export { load };

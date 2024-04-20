@@ -1,1 +1,12 @@
-div.svelte-1yd6a7e{display:flex;justify-content:center;align-items:center}h1.svelte-1yd6a7e{font-size:50px;text-shadow:4px 4px 4px 4px hsla(204,41%,20%,1)}h2.svelte-1yd6a7e{color:#000}
+div.svelte-1yd6a7e {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1.svelte-1yd6a7e {
+	font-size: 50px;
+	text-shadow: 4px 4px 4px 4px hsla(204, 41%, 20%, 1);
+}
+h2.svelte-1yd6a7e {
+	color: #000;
+}

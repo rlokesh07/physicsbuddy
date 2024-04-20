@@ -1,9 +1,7 @@
 const topics = {
-  HarmonicMotion: {
-    topic: "Harmonic Motion",
-    questions: "HMQuestions"
-  }
+	HarmonicMotion: {
+		topic: 'Harmonic Motion',
+		questions: 'HMQuestions'
+	}
 };
-export {
-  topics as t
-};
+export { topics as t };

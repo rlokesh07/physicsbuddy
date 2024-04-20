@@ -1,5 +1,2 @@
-async function load() {
-}
-export {
-  load
-};
+async function load() {}
+export { load };

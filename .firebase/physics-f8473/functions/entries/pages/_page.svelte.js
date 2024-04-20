@@ -1,10 +1,8 @@
-import { c as create_ssr_component } from "../../chunks/ssr.js";
-import "../../chunks/history.js";
-import "katex";
-import "../../chunks/client.js";
+import { c as create_ssr_component } from '../../chunks/ssr.js';
+import '../../chunks/history.js';
+import 'katex';
+import '../../chunks/client.js';
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return ``;
+	return ``;
 });
-export {
-  Page as default
-};
+export { Page as default };

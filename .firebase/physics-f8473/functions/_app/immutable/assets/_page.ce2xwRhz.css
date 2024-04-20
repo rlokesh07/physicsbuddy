@@ -1,1 +1,18 @@
-.authContainer.svelte-72w0xh.svelte-72w0xh{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}form.svelte-72w0xh.svelte-72w0xh{display:flex;flex-direction:column;gap:8px;width:400px;max-width:100%;margin:0 auto}form.svelte-72w0xh input.svelte-72w0xh{width:100%}
+.authContainer.svelte-72w0xh.svelte-72w0xh {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+}
+form.svelte-72w0xh.svelte-72w0xh {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	width: 400px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+form.svelte-72w0xh input.svelte-72w0xh {
+	width: 100%;
+}

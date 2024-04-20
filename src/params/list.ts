@@ -1,5 +1,5 @@
-import { topics } from '$lib/topics';
+import { subjects } from '$lib/subjects';
 
 export function match(param) {
-	return param in topics;
+	return param in subjects;
 }

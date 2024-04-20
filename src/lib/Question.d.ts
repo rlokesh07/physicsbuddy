@@ -9,4 +9,10 @@ interface QuestionType {
 	question: string;
 	options: string[];
 	answer: number;
+	type: string;
+	unit: string[];
+	formattedAnswer: string;
+}
+interface TopicType {
+	topic: string;
 }

@@ -1,5 +1,5 @@
-const mediaBase = `$lib/images`
+const mediaBase = `$lib/images`;
 
-export function media (id: string) {
-	return `${mediaBase}/${id}`
+export function media(id: string) {
+	return `${mediaBase}/${id}`;
 }
