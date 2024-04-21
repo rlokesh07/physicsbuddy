@@ -75,9 +75,10 @@ export const authHandlers = {
 /**
  * @param {string} questionId
  * @param {boolean} correct
+ * @param {string} subject
  */
-export async function updateQuestionCounts(questionId, correct) {
-		const questionRef = doc(db, "questions", questionId);
+export async function updateQuestionCounts(questionId, correct, subject) {
+		const questionRef = doc(db, subject, questionId);
 		await updateDoc(questionRef, {
 			attempted: increment(1),
 			correct: correct ? increment(1): increment(0)

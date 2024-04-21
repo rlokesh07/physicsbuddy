@@ -1,10 +1,8 @@
 <script lang="ts">
 	import AnswerPage from '$lib/components/AnswerPage.svelte';
 	import { authStore, questionsStore, updateQuestionCounts } from '../../../../../store/store.js';
-	import type { QuestionType } from '$lib/types';
 	import { onDestroy, onMount } from 'svelte';
-	import { doc, setDoc } from 'firebase/firestore';
-	import { db } from '$lib/firebase/firebase';
+
 	export let data: { id: string; answer: string; subject:string }; // Assuming data is of type { id: string, answer: string }
 
 	let questionList: QuestionType[] = [];
@@ -27,7 +25,7 @@
 	onMount(async () => {
 
 		if (index !== undefined && questionList[index]){
-			await updateQuestionCounts(questionList[index].id, correct);
+			await updateQuestionCounts(questionList[index].id,  correct, data.subject);
 		}
 	});
 
@@ -50,7 +48,7 @@
 			</div>
 		{/if}
 	</div>
-	<AnswerPage {index} subject={data.subject} />
+	<AnswerPage  subject={data.subject} {index}/>
 </div>
 
 <style>
