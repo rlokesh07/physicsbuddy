@@ -16,3 +16,8 @@ interface QuestionType {
 interface TopicType {
 	topic: string;
 }
+
+interface FlashcardType {
+	front: string;
+	back: string;
+}

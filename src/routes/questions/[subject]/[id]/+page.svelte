@@ -26,7 +26,6 @@
 	});
 </script>
 
-<div>sdfsdf</div>
 <Question on:formSubmitted={handleSubmit} question={questionList[index]} />
 
 <style>

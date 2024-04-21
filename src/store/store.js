@@ -43,6 +43,14 @@ export const topicsStore = writable({
 	loading: true
 });
 
+export const flashcardsStore = writable({
+	/**
+	 * @type {FlashcardType[]}
+	 */
+	flashcards:[],
+	loading: true
+})
+
 export const authHandlers = {
 	signup: async (/** @type {string} */ email, /** @type {string} */ pass) => {
 		await createUserWithEmailAndPassword(auth, email, pass);
@@ -125,4 +133,24 @@ export async function fetchQuestions(subject) {
 		});
 	});
 	questionsStore.set({ questions, loading: false });
+}
+/**
+ * @param {string} subject
+ */
+export async function fetchFlashcards(subject){
+	const flashcardsRef = collection(db, `${subject} Flashcards`);
+	const querySnapshot = await getDocs(flashcardsRef);
+	/**
+	 * @type {Array<{front:string, back:string}>}
+	 */
+	const flashcards = [];
+	querySnapshot.forEach((doc) =>{
+		flashcards.push({
+			front: doc.data().front,
+			back: doc.data().back,
+			...doc.data()
+		});
+	});
+	flashcardsStore.set({ flashcards, loading:false});
+
 }

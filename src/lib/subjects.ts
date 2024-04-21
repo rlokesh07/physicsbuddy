@@ -5,5 +5,8 @@ export interface Subject {
 export const subjects: Record<string, Subject> = {
 	Physics: {
 		subject: 'physics'
+	},
+	Math: {
+		subject: 'math'
 	}
 }

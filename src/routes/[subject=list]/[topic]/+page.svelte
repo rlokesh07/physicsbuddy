@@ -26,7 +26,7 @@
 		</div>
 
 		<div class="two">
-			<a href={`/modules/${data.topic}`}>Flash Cards</a>
+			<a href={`/flashcards/${data.subject}/${data.topic}`}>Flash Cards</a>
 		</div>
 
 		<div class="three">
