@@ -52,48 +52,21 @@
 	});
 </script>
 
-<nav>
-	<a href="/">Study Sign</a>
-
-	<div class="modes">
-		<a href="/Physics">Physics</a>
-		<a href="/Math">Math</a>
-		<a href="/Chemistry">Chemistry</a>
+<nav class="navbar navbar-expand-md bg-body py-3">
+	<div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>To Teach a Monkey</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navcol-3" style="padding-right: 1px;">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item"><a class="nav-link active" href="/Physics">Physics</a></li>
+				<li class="nav-item"><a class="nav-link" href="/Math">Math</a></li>
+				<li class="nav-item"><a class="nav-link" href="/History">History</a></li>
+			</ul><span class="navbar-text" style="padding-right: 0px;padding-left: 0px;margin-left: 125px;">Account</span>
+		</div>
 	</div>
-
-	<a href="/account">Account</a>
 </nav>
 
 <slot />
 
 <style>
-	nav {
-		display: flex;
-		width: 100% - 40px;
-		height: 3rem;
-		align-items: center;
-		justify-content: space-between;
-		background: hsla(204, 41%, 25%, 1);
-		border: #656565 solid 3px;
-		padding: 10px;
-	}
+    @import 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css';
 
-	a {
-		font-family: system-ui;
-		font-weight: bold;
-		font-size: 25px;
-		color: white;
-		text-decoration: none;
-		text-shadow: 2px 2px hsla(80, 0%, 50%, 1);
-	}
-
-	a:hover {
-		text-decoration: underline;
-		text-decoration-thickness: 5px;
-		text-decoration-skip-ink: none;
-	}
-	.modes {
-		display: flex;
-		gap: 3em;
-	}
 </style>

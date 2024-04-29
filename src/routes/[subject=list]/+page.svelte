@@ -52,6 +52,7 @@
         gap: 15px;
         height: 100%;
         align-items: center;
+
     }
 
 </style>

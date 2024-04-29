@@ -40,14 +40,15 @@
 	<div class="answerbackground">
 		{#if correct}
 			<div class="correct">
-				<h1>Correct!</h1>
+				<h1 class="answertext">Correct!</h1>
 			</div>
 		{:else}
 			<div class="false">
-				<h1>False</h1>
+				<h1 class="answertext">False</h1>
 			</div>
 		{/if}
 	</div>
+	<div class="break"></div>
 	<AnswerPage  subject={data.subject} {index}/>
 </div>
 
@@ -72,8 +73,12 @@
 		width: 95%;
 		margin: 0px auto 0;
 		top: 10px;
+			padding: 50px 0;
 	}
-
+	.answertext{  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);}
 	.correct {
 		margin: 0;
 		position: absolute;
@@ -84,6 +89,7 @@
 		background: #a3bfb1;
 		height: 100%;
 		width: 100%;
+
 	}
 	.false {
 		margin: 0;
@@ -95,6 +101,9 @@
 		background: #c56c6c;
 		height: 100%;
 		width: 100%;
+	}
+	.break{
+			margin-top: 15px;
 	}
 
 	h2,

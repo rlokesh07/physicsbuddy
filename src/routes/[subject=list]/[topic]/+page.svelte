@@ -36,9 +36,9 @@
 	{#each questionList as question}
 		{#if question.topic === data.topic}
 			<div class="question">
-				<a href={`/questions/${data.subject}/${question.id}`}>ID: {question.id}</a>
-				<p>Difficulty: {question.difficulty}</p>
-				<p>Type: {question.type}</p>
+				<div><a href={`/questions/${data.subject}/${question.id}`}>ID: {question.id}</a></div>
+				<div><esm>Difficulty: {question.difficulty}</esm></div>
+				<div><esm>Type: {question.type}</esm></div>
 			</div>
 		{/if}
 	{/each}
@@ -47,7 +47,6 @@
 <style>
 	.question {
 		height: 50px;
-		background: white;
 		display: flex;
 		align-items: center;
 		border: 5px solid hsla(204, 41%, 25%, 1);
@@ -56,6 +55,7 @@
 		max-width: 60rem;
 		width: 90%;
 		justify-content: space-evenly;
+		background: #f3f3f3;
 	}
 	a,
 	p {
@@ -87,7 +87,7 @@
 	.one {
 		grid-column: 1/4; /* Span all columns */
 		grid-row: 1/3;
-		background: white;
+
 	}
 
 	/* Center grid items horizontally in the topGrid */
@@ -111,5 +111,6 @@
 		align-items: center;
 		border: 5px solid hsla(204, 41%, 25%, 1);
 		border-radius: 5px;
+      background: #f3f3f3;
 	}
 </style>
