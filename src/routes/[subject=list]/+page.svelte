@@ -8,6 +8,9 @@
 
 	});
 	 export let data;
+	$: {
+			fetchTopics(data.subject);
+		}
 	onMount(async () => {
 		await fetchTopics(data.subject);
 	});

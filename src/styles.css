@@ -1,22 +1,4 @@
-/*html {
-	background: hsla(222, 65%, 85%, 1);
-}
 
-h1 {
-	--color: #003666;
-	--shadow: hsla(204, 41%, 20%, 1);
-	font-family: system-ui;
-	color: white;
-	text-shadow: 4px 4px hsla(204, 41%, 20%, 1);
-}
-h2 {
-	font-family: system-ui;
-	color: white;
-}
-a {
-	font-family: system-ui;
-}
-
-p {
-	font-family: system-ui;
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }

@@ -10,19 +10,20 @@ return {
 	assets: new Set(["favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.DVyzrNgr.js","app":"_app/immutable/entry/app.g0W5iZQN.js","imports":["_app/immutable/entry/start.DVyzrNgr.js","_app/immutable/chunks/entry.6uwx2wIw.js","_app/immutable/chunks/scheduler.Bk5BCwgU.js","_app/immutable/chunks/index.C3g5pe3j.js","_app/immutable/entry/app.g0W5iZQN.js","_app/immutable/chunks/scheduler.Bk5BCwgU.js","_app/immutable/chunks/index.IejQtBaF.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.B685J3m8.js","app":"_app/immutable/entry/app.C5yc0ru_.js","imports":["_app/immutable/entry/start.B685J3m8.js","_app/immutable/chunks/entry.wntc-zjR.js","_app/immutable/chunks/scheduler.Bk5BCwgU.js","_app/immutable/chunks/index.C3g5pe3j.js","_app/immutable/entry/app.C5yc0ru_.js","_app/immutable/chunks/scheduler.Bk5BCwgU.js","_app/immutable/chunks/index.IejQtBaF.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
-			__memo(() => import('./chunks/0-Rg0yJ4_0.js')),
-			__memo(() => import('./chunks/1-Dro5_uzN.js')),
-			__memo(() => import('./chunks/2-DvsgCYN5.js')),
+			__memo(() => import('./chunks/0-Bpz681rQ.js')),
+			__memo(() => import('./chunks/1-ClleCaku.js')),
+			__memo(() => import('./chunks/2-doKz7xys.js')),
 			__memo(() => import('./chunks/3-Sj4k80vI.js')),
-			__memo(() => import('./chunks/4-DdRdBZ5w.js')),
-			__memo(() => import('./chunks/5-Bs-opIIT.js')),
-			__memo(() => import('./chunks/6-D6yKW4Cg.js')),
-			__memo(() => import('./chunks/7-C0O50iIg.js')),
-			__memo(() => import('./chunks/8-DlszV1xX.js')),
-			__memo(() => import('./chunks/9-CHrUU0gz.js')),
-			__memo(() => import('./chunks/10-DlOQ0hH9.js'))
+			__memo(() => import('./chunks/4-BRH03x6x.js')),
+			__memo(() => import('./chunks/5-BeN0MTsk.js')),
+			__memo(() => import('./chunks/6-BgRSTgq4.js')),
+			__memo(() => import('./chunks/7-DSO5squg.js')),
+			__memo(() => import('./chunks/8-SrcO-LN1.js')),
+			__memo(() => import('./chunks/9-C4zQ3IY4.js')),
+			__memo(() => import('./chunks/10-DasyC2TF.js')),
+			__memo(() => import('./chunks/11-BrbRrOO9.js'))
 		],
 		routes: [
 			{
@@ -54,38 +55,45 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/modules/Applications of Derivatives",
+				pattern: /^\/modules\/Applications of Derivatives\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 6 },
+				endpoint: null
+			},
+			{
 				id: "/modules/Harmonic Motion",
 				pattern: /^\/modules\/Harmonic Motion\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 6 },
+				page: { layouts: [0,], errors: [1,], leaf: 7 },
 				endpoint: null
 			},
 			{
 				id: "/questions/[subject]/[id]",
 				pattern: /^\/questions\/([^/]+?)\/([^/]+?)\/?$/,
 				params: [{"name":"subject","optional":false,"rest":false,"chained":false},{"name":"id","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 7 },
+				page: { layouts: [0,], errors: [1,], leaf: 8 },
 				endpoint: null
 			},
 			{
 				id: "/questions/[subject]/[id]/[option]",
 				pattern: /^\/questions\/([^/]+?)\/([^/]+?)\/([^/]+?)\/?$/,
 				params: [{"name":"subject","optional":false,"rest":false,"chained":false},{"name":"id","optional":false,"rest":false,"chained":false},{"name":"option","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 8 },
+				page: { layouts: [0,], errors: [1,], leaf: 9 },
 				endpoint: null
 			},
 			{
 				id: "/[subject=list]",
 				pattern: /^\/([^/]+?)\/?$/,
 				params: [{"name":"subject","matcher":"list","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 9 },
+				page: { layouts: [0,], errors: [1,], leaf: 10 },
 				endpoint: null
 			},
 			{
 				id: "/[subject=list]/[topic]",
 				pattern: /^\/([^/]+?)\/([^/]+?)\/?$/,
 				params: [{"name":"subject","matcher":"list","optional":false,"rest":false,"chained":false},{"name":"topic","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 10 },
+				page: { layouts: [0,], errors: [1,], leaf: 11 },
 				endpoint: null
 			}
 		],

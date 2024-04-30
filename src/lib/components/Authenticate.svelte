@@ -69,7 +69,7 @@
 	</form>
 	<div class="options">
 		{#if register}
-			<div>
+			<div class="registerLogin">
 				<p>Already have an account?</p>
 				<p class="clicker" on:click={handleRegister} on:keydown={() => {}}>Login</p>
 			</div>
@@ -115,6 +115,7 @@
 		border-radius: 3px;
 		font-size: 14px;
 		background: white;
+			margin-bottom: 10px;
 	}
 	button {
 		margin-top: 15px;
@@ -126,6 +127,7 @@
 		border-radius: 3px; /* Match the border radius of the input fields */
 		height: 40px; /* Match the height of the input fields */
 		cursor: pointer;
+			margin-bottom: 10px;
 	}
 	.clicker:hover {
 		color: hsla(204, 41%, 25%, 1);
