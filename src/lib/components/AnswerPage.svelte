@@ -26,6 +26,8 @@
 	<h2>{@html renderTextWithMathMode(string)}</h2>
 {/each}
 
+<a href={`/${subject}/${questionList[index].topic}`}>Back</a>
+
 <style>
 	h2,
 	h1 {
@@ -33,4 +35,5 @@
 		color: #4c5958;
 		text-shadow: none;
 	}
+
 </style>

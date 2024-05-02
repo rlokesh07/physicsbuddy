@@ -57,11 +57,10 @@
 		justify-content: space-evenly;
 		background: #f3f3f3;
 	}
-	a,
-	p {
-		text-decoration: none;
-		color: grey;
-	}
+  a,
+  p {
+      text-decoration: none;
+  }
 
 	a:hover {
 		color: hsla(204, 41%, 25%, 1);
