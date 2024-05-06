@@ -10,20 +10,21 @@ return {
 	assets: new Set(["favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.Bo-XYDVe.js","app":"_app/immutable/entry/app.Be-ONBwK.js","imports":["_app/immutable/entry/start.Bo-XYDVe.js","_app/immutable/chunks/entry.Dpy-Qo2Y.js","_app/immutable/chunks/scheduler.Bk5BCwgU.js","_app/immutable/chunks/index.C3g5pe3j.js","_app/immutable/entry/app.Be-ONBwK.js","_app/immutable/chunks/scheduler.Bk5BCwgU.js","_app/immutable/chunks/index.IejQtBaF.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.CFUlZJbx.js","app":"_app/immutable/entry/app.B5bF8j94.js","imports":["_app/immutable/entry/start.CFUlZJbx.js","_app/immutable/chunks/entry.zgnK7Oan.js","_app/immutable/chunks/scheduler.TjysJePw.js","_app/immutable/chunks/index.Dft8GlP2.js","_app/immutable/entry/app.B5bF8j94.js","_app/immutable/chunks/scheduler.TjysJePw.js","_app/immutable/chunks/index.Do5D9Rr6.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
-			__memo(() => import('./chunks/0-Bsbt3Lq1.js')),
-			__memo(() => import('./chunks/1-3hYo2LIM.js')),
-			__memo(() => import('./chunks/2-NACW8oSB.js')),
-			__memo(() => import('./chunks/3-Sj4k80vI.js')),
-			__memo(() => import('./chunks/4-BRH03x6x.js')),
-			__memo(() => import('./chunks/5-BeN0MTsk.js')),
-			__memo(() => import('./chunks/6-BgRSTgq4.js')),
-			__memo(() => import('./chunks/7-DSO5squg.js')),
-			__memo(() => import('./chunks/8-SrcO-LN1.js')),
-			__memo(() => import('./chunks/9-BvJe1n_i.js')),
-			__memo(() => import('./chunks/10-DasyC2TF.js')),
-			__memo(() => import('./chunks/11-DBtSeWaW.js'))
+			__memo(() => import('./chunks/0-BFxGMx6w.js')),
+			__memo(() => import('./chunks/1-C4f1hqUz.js')),
+			__memo(() => import('./chunks/2-w5JI-V6h.js')),
+			__memo(() => import('./chunks/3-1U1vudTP.js')),
+			__memo(() => import('./chunks/4-DJIen-U7.js')),
+			__memo(() => import('./chunks/5-BL3SpdzG.js')),
+			__memo(() => import('./chunks/6-BGmmGINt.js')),
+			__memo(() => import('./chunks/7-Dg-Zg9s4.js')),
+			__memo(() => import('./chunks/8-CD0YBgQA.js')),
+			__memo(() => import('./chunks/9-eaMbsgr7.js')),
+			__memo(() => import('./chunks/10-BoRT2GoM.js')),
+			__memo(() => import('./chunks/11-CYJOAkCV.js')),
+			__memo(() => import('./chunks/12-BTA8tOHj.js'))
 		],
 		routes: [
 			{
@@ -69,31 +70,38 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/modules/Waves",
+				pattern: /^\/modules\/Waves\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 8 },
+				endpoint: null
+			},
+			{
 				id: "/questions/[subject]/[id]",
 				pattern: /^\/questions\/([^/]+?)\/([^/]+?)\/?$/,
 				params: [{"name":"subject","optional":false,"rest":false,"chained":false},{"name":"id","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 8 },
+				page: { layouts: [0,], errors: [1,], leaf: 9 },
 				endpoint: null
 			},
 			{
 				id: "/questions/[subject]/[id]/[option]",
 				pattern: /^\/questions\/([^/]+?)\/([^/]+?)\/([^/]+?)\/?$/,
 				params: [{"name":"subject","optional":false,"rest":false,"chained":false},{"name":"id","optional":false,"rest":false,"chained":false},{"name":"option","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 9 },
+				page: { layouts: [0,], errors: [1,], leaf: 10 },
 				endpoint: null
 			},
 			{
 				id: "/[subject=list]",
 				pattern: /^\/([^/]+?)\/?$/,
 				params: [{"name":"subject","matcher":"list","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 10 },
+				page: { layouts: [0,], errors: [1,], leaf: 11 },
 				endpoint: null
 			},
 			{
 				id: "/[subject=list]/[topic]",
 				pattern: /^\/([^/]+?)\/([^/]+?)\/?$/,
 				params: [{"name":"subject","matcher":"list","optional":false,"rest":false,"chained":false},{"name":"topic","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 11 },
+				page: { layouts: [0,], errors: [1,], leaf: 12 },
 				endpoint: null
 			}
 		],
