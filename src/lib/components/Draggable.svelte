@@ -29,7 +29,6 @@
     .draggable {
         user-select: none;
         cursor: move;
-        border: solid 1px gray;
         position: absolute;
     }
 </style>
