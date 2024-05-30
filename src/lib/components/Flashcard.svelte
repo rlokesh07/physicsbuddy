@@ -25,9 +25,9 @@
 
 <style>
     .flashcard {
-        width: 500px;
+        width: 1000px;
         height: 300px;
-        border-radius: 10px;
+
         position: relative;
         cursor: pointer;
         display: flex;

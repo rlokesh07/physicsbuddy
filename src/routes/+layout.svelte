@@ -59,6 +59,7 @@
 			<div class="collapse navbar-collapse" id="navcol-3" style="padding-right: 55px;">
 				<ul class="navbar-nav mx-auto">
 					<li class="nav-item"><a class="nav-link active" href="/Physics">Physics</a></li>
+					<li class="nav-item"><a class="nav-link active" href="/Math">Math</a></li>
 				</ul><span class="navbar-text" style="padding-right: 0px;padding-left: 0px;margin-left: 125px;">Account</span>
 			</div>
 		</div>

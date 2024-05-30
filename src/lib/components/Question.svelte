@@ -138,4 +138,7 @@
 	.submit-button-container {
 		padding-top: 10px;
 	}
+	img{
+			width: 100%;
+	}
 </style>

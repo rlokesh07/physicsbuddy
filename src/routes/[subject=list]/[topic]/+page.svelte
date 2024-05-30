@@ -80,7 +80,9 @@
 	.topGrid {
 		display: grid;
 		gap: 10px;
-		grid-auto-rows: minmax(100px, auto);
+      max-width: 20rem;
+      width: 90%;
+
 	}
 
 	.one {

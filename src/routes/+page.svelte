@@ -18,7 +18,8 @@
 		<div class="col">
 			<div class="card">
 				<div class="card-body p-4">
-					<h4 class="card-title">Physics</h4>
+
+					<a href="/Physics" class="card-title"><h4 class="card-title">Physics</h4></a>
 					<p class="card-text">Enjoy select problems from DP1 Physics. Try out our beta for the Waves unit!</p>
 				</div>
 			</div>
@@ -26,7 +27,7 @@
 		<div class="col">
 			<div class="card">
 				<div class="card-body p-4">
-					<h4 class="card-title">Math</h4>
+					<a href="/Math" class="card-title"><h4 class="card-title">Math</h4></a>
 					<p class="card-text">Coming soon! Enjoy select problems from HL Analysis and Approaches. Featuring multiple choice and free response questions, practice your skills with cultivated IB questions!</p>
 				</div>
 			</div>
