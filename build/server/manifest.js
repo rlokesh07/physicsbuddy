@@ -10,21 +10,22 @@ return {
 	assets: new Set(["favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.Bks8ENxq.js","app":"_app/immutable/entry/app.zs0fegNq.js","imports":["_app/immutable/entry/start.Bks8ENxq.js","_app/immutable/chunks/entry.BvEPwwOM.js","_app/immutable/chunks/scheduler.BX5N7TL5.js","_app/immutable/chunks/index.Dag0Uhrt.js","_app/immutable/entry/app.zs0fegNq.js","_app/immutable/chunks/scheduler.BX5N7TL5.js","_app/immutable/chunks/index.BZjeE8Gh.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.ChXqQQN7.js","app":"_app/immutable/entry/app.cXkwHXyV.js","imports":["_app/immutable/entry/start.ChXqQQN7.js","_app/immutable/chunks/entry.C94gmttt.js","_app/immutable/chunks/scheduler.Cy5--3XE.js","_app/immutable/chunks/index.7Qq_5lIc.js","_app/immutable/entry/app.cXkwHXyV.js","_app/immutable/chunks/scheduler.Cy5--3XE.js","_app/immutable/chunks/index.ChWjTNHc.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
-			__memo(() => import('./chunks/0-DiYmkSmh.js')),
-			__memo(() => import('./chunks/1-DK_XhFUk.js')),
-			__memo(() => import('./chunks/2-CSJdjOWu.js')),
-			__memo(() => import('./chunks/3-BYI6-LSt.js')),
-			__memo(() => import('./chunks/4-o8vTeGO6.js')),
-			__memo(() => import('./chunks/5-DART0tDf.js')),
-			__memo(() => import('./chunks/6-F0puSfbd.js')),
-			__memo(() => import('./chunks/7-BcWHDN15.js')),
-			__memo(() => import('./chunks/8-CAckI5WR.js')),
-			__memo(() => import('./chunks/9-B3AIjy9u.js')),
-			__memo(() => import('./chunks/10-eSJo8SpD.js')),
-			__memo(() => import('./chunks/11-C3QF-u6A.js')),
-			__memo(() => import('./chunks/12-Do7zX_NJ.js'))
+			__memo(() => import('./chunks/0-B76ass0k.js')),
+			__memo(() => import('./chunks/1-DZ_BdLN6.js')),
+			__memo(() => import('./chunks/2-DyCAidNo.js')),
+			__memo(() => import('./chunks/3-BWzM6CBI.js')),
+			__memo(() => import('./chunks/4-CsIfy0EP.js')),
+			__memo(() => import('./chunks/5-PPG_zuV_.js')),
+			__memo(() => import('./chunks/6-BmMFYVRd.js')),
+			__memo(() => import('./chunks/7-C1-DQyRA.js')),
+			__memo(() => import('./chunks/8-BR4UAQJe.js')),
+			__memo(() => import('./chunks/9-CapwGJwE.js')),
+			__memo(() => import('./chunks/10-qX-xbS27.js')),
+			__memo(() => import('./chunks/11-BKD2Ayv8.js')),
+			__memo(() => import('./chunks/12-CEXXX7XS.js')),
+			__memo(() => import('./chunks/13-s_ag_-_H.js'))
 		],
 		routes: [
 			{
@@ -70,38 +71,45 @@ return {
 				endpoint: null
 			},
 			{
+				id: "/modules/Trigonometry",
+				pattern: /^\/modules\/Trigonometry\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 8 },
+				endpoint: null
+			},
+			{
 				id: "/modules/Wave",
 				pattern: /^\/modules\/Wave\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 8 },
+				page: { layouts: [0,], errors: [1,], leaf: 9 },
 				endpoint: null
 			},
 			{
 				id: "/questions/[subject]/[id]",
 				pattern: /^\/questions\/([^/]+?)\/([^/]+?)\/?$/,
 				params: [{"name":"subject","optional":false,"rest":false,"chained":false},{"name":"id","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 9 },
+				page: { layouts: [0,], errors: [1,], leaf: 10 },
 				endpoint: null
 			},
 			{
 				id: "/questions/[subject]/[id]/[option]",
 				pattern: /^\/questions\/([^/]+?)\/([^/]+?)\/([^/]+?)\/?$/,
 				params: [{"name":"subject","optional":false,"rest":false,"chained":false},{"name":"id","optional":false,"rest":false,"chained":false},{"name":"option","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 10 },
+				page: { layouts: [0,], errors: [1,], leaf: 11 },
 				endpoint: null
 			},
 			{
 				id: "/[subject=list]",
 				pattern: /^\/([^/]+?)\/?$/,
 				params: [{"name":"subject","matcher":"list","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 11 },
+				page: { layouts: [0,], errors: [1,], leaf: 12 },
 				endpoint: null
 			},
 			{
 				id: "/[subject=list]/[topic]",
 				pattern: /^\/([^/]+?)\/([^/]+?)\/?$/,
 				params: [{"name":"subject","matcher":"list","optional":false,"rest":false,"chained":false},{"name":"topic","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 12 },
+				page: { layouts: [0,], errors: [1,], leaf: 13 },
 				endpoint: null
 			}
 		],

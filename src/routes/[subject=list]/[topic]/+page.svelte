@@ -21,17 +21,10 @@
 
 <div class="questionContainer">
 	<div class="topGrid">
-		<div class="one">
+		<div class="studyGuide">
 			<a href={`/modules/${data.topic}`}>Study Guide</a>
 		</div>
 
-		<div class="two">
-			<a href={`/flashcards/${data.subject}/${data.topic}`}>Flash Cards</a>
-		</div>
-
-		<div class="three">
-			<a href={`/modules/${data.topic}`}>{data.topic}</a>
-		</div>
 	</div>
 	{#each questionList as question}
 		{#if question.topic === data.topic}
@@ -85,12 +78,6 @@
 
 	}
 
-	.one {
-		grid-column: 1/4; /* Span all columns */
-		grid-row: 1/3;
-
-	}
-
 	/* Center grid items horizontally in the topGrid */
 	.topGrid {
 		display: flex;
@@ -100,12 +87,10 @@
 		height: 50px;
 		align-items: center;
 	}
-	.one,
-	.two,
-	.three {
+	.studyGuide {
 		display: flex;
 		justify-content: center;
-		width: 95%;
+		width: 100%;
 		max-width: 60rem;
 		height: 50px;
 		background: white;

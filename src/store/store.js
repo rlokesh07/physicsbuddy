@@ -28,6 +28,31 @@ export const authStore = writable({
  * @property {string} formattedAnswer
  */
 
+/**
+ * @typedef {Object} User
+ * @property {string} emails
+ * @property {number} bananaPoints
+ */
+
+
+export async function fetchUsers(){
+	const userRef = collection(db, 'users');
+	const querySnapshot = await getDocs(userRef);
+	/**
+	 * @type {Array<{email:string, bananaPoints:number}>}
+	 */
+	const users = [];
+	querySnapshot.forEach((doc) =>{
+		users.push({
+			email: doc.data().emails,
+			bananaPoints: doc.data().bananaPoints,
+			...doc.data()
+		});
+	});
+	usersStore.set({ users, loading:false})
+
+}
+
 export const questionsStore = writable({
 	/**
 	 * @type {QuestionType[]}
@@ -42,7 +67,13 @@ export const topicsStore = writable({
 	topics: [],
 	loading: true
 });
-
+export const usersStore = writable({
+	/**
+	 * @type {Array<{email:string, bananaPoints:number}>}
+	 */
+	users: [],
+	loading: true
+});
 export const flashcardsStore = writable({
 	/**
 	 * @type {FlashcardType[]}
@@ -76,13 +107,23 @@ export const authHandlers = {
  * @param {string} questionId
  * @param {boolean} correct
  * @param {string} subject
+ * @param {string | undefined} uid
  */
-export async function updateQuestionCounts(questionId, correct, subject) {
+export async function updateQuestionCounts(questionId, correct, subject, uid) {
 		const questionRef = doc(db, subject, questionId);
+
 		await updateDoc(questionRef, {
 			attempted: increment(1),
 			correct: correct ? increment(1): increment(0)
 		})
+	if(uid){
+		const userRef = doc(db, 'users', uid);
+		await updateDoc(userRef, {
+			bananaPoints: correct ? increment(1): increment(0)
+		})
+	}
+
+
 
 }
 

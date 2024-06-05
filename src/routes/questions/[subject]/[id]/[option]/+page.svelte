@@ -2,6 +2,7 @@
 	import AnswerPage from '$lib/components/AnswerPage.svelte';
 	import { authStore, questionsStore, updateQuestionCounts } from '../../../../../store/store.js';
 	import { onDestroy, onMount } from 'svelte';
+	import { auth, db } from '$lib/firebase/firebase';
 
 	export let data: { id: string; answer: string; subject:string }; // Assuming data is of type { id: string, answer: string }
 
@@ -25,7 +26,7 @@
 	onMount(async () => {
 
 		if (index !== undefined && questionList[index]){
-			await updateQuestionCounts(questionList[index].id,  correct, data.subject);
+			await updateQuestionCounts(questionList[index].id,  correct, data.subject, auth.currentUser?.uid);
 		}
 	});
 

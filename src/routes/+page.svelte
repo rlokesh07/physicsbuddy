@@ -6,7 +6,7 @@
 </head>
 
 <div class="container py-4 py-xl-5">
-	<section class="py-4 py-xl-5" style="padding-left: 0px;padding-bottom: 159px;margin-bottom: -99px;padding-top: 89px;margin-top: -80px;">
+	<section class="py-4 py-xl-5" style="padding-left: 0px;padding-bottom: 159px;margin-bottom: -99px;padding-top: 89px;margin-top: -100px;">
 		<div class="container">
 			<div class="text-center p-4 p-lg-5">
 				<p class="fw-bold text-primary mb-2">Proud to introduce</p>
@@ -20,7 +20,7 @@
 				<div class="card-body p-4">
 
 					<a href="/Physics" class="card-title"><h4 class="card-title">Physics</h4></a>
-					<p class="card-text">Enjoy select problems from DP1 Physics. Try out our beta for the Waves unit!</p>
+					<p class="card-text">Enjoy select problems from DP1 Physics.!</p>
 				</div>
 			</div>
 		</div>
@@ -28,7 +28,7 @@
 			<div class="card">
 				<div class="card-body p-4">
 					<a href="/Math" class="card-title"><h4 class="card-title">Math</h4></a>
-					<p class="card-text">Coming soon! Enjoy select problems from HL Analysis and Approaches. Featuring multiple choice and free response questions, practice your skills with cultivated IB questions!</p>
+					<p class="card-text">Enjoy select problems from HL Analysis and Approaches. Featuring multiple choice and free response questions, practice your skills with cultivated IB questions!</p>
 				</div>
 			</div>
 		</div>

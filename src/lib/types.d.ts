@@ -13,3 +13,10 @@ export interface QuestionType {
 	unit:string[];
 	formattedAnswer: string;
 }
+
+
+export interface UserType {
+	bananaPoints: number;
+	email: string;
+
+}
