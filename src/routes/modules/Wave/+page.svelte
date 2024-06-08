@@ -2,7 +2,7 @@
 	import { renderTextWithMathMode } from '$lib/KaTeX';
 
 </script>
-<div>
+<div class="container">
 	<h1>Waves</h1>
 	<div class="typeOfWaves">
 		<h2>Types of Waves</h2>
