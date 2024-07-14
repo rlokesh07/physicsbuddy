@@ -1,6 +1,6 @@
 <script lang="ts">
 	import questions from '$lib/questions/questions.json';
-	import { questionsStore, fetchQuestions } from '../../../store/store';
+	import { questionsStore, fetchQuestions, usersStore, fetchUsers } from '../../../store/store';
 	import { onMount } from 'svelte';
 
 	export const prerender = false;
@@ -13,7 +13,12 @@
 		loading = value.loading;
 	});
 
+	usersStore.subscribe((value) => {
+		console.log(value.users[0])
+	})
+
 	onMount(async () => {
+		await fetchUsers()
 		await fetchQuestions(data.subject);
 	});
 	export let data;

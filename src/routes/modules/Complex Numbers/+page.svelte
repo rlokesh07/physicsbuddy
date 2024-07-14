@@ -38,6 +38,7 @@
 		<h4>Conjugate</h4>
 		<p>{@html renderTextWithMathMode(`$$z^* = a - bi$$`)}</p>
 		<p>{@html renderTextWithMathMode(`$$zz^* = a^2 + b^2$$`)}</p>
+		<p>This is really important to recognize when you see the addition of two squares</p>
 	</div>
 
 	<div>

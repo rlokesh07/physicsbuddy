@@ -20,3 +20,8 @@ export interface UserType {
 	email: string;
 
 }
+
+export interface MessageType {
+	role: string;
+	content: string;
+}

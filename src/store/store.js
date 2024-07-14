@@ -50,6 +50,7 @@ export async function fetchUsers(){
 		});
 	});
 	usersStore.set({ users, loading:false})
+	console.log(users[0])
 
 }
 
