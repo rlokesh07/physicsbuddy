@@ -35,7 +35,7 @@
 		<div class="col">
 			<div class="card">
 				<div class="card-body p-4">
-					<a href="/history" class="card-title"><h4 class="card-title">History</h4></a>
+					<h4 class="card-title">History</h4>
 					<p class="card-text">Coming soon! Cultivated study guides for DP1 History paper 3 assessments and questions to test your knowledge</p>
 				</div>
 			</div>

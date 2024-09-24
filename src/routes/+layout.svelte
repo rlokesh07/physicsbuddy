@@ -57,8 +57,7 @@
 				<ul class="navbar-nav mx-auto">
 					<li class="nav-item"><a class="nav-link active" href="/Physics">Physics</a></li>
 					<li class="nav-item"><a class="nav-link active" href="/Math">Math</a></li>
-					<li class="nav-item"><a class="nav-link active" href="/Other">Other</a></li>
-				</ul><a class="nav-link active" style="padding-right: 0px;padding-left: 0px;margin-left: 125px;" href="/account">Account</a>
+				</ul><a class="nav-link active" style="padding-right: 0px;padding-left: 0px;margin-left: 125px;" href="/account"></a>
 			</div>
 		</div>
 	</nav>
