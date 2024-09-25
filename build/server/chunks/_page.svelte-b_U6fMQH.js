@@ -1,14 +1,8 @@
 import { c as create_ssr_component, e as escape, d as add_attribute, v as validate_component, f as compute_rest_props, h as spread, i as escape_object, j as escape_attribute_value } from './ssr-ziHnzutJ.js';
-import OpenAI from 'openai';
 import '@langchain/community/vectorstores/hnswlib';
 import '@langchain/openai';
 import { w as writable } from './index2-C7r_T28S.js';
 
-const openaiConfig = {
-  apiKey: "sk-proj-LUDPbEUSOxyPsB1ZuRrIT3BlbkFJGxp9yYOB5x94Q0s0p1vP",
-  dangerouslyAllowBrowser: true
-};
-new OpenAI(openaiConfig);
 function toClassName(value) {
   let result = "";
   if (typeof value === "string" || typeof value === "number") {
@@ -138,4 +132,4 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-BIo2YafN.js.map
+//# sourceMappingURL=_page.svelte-b_U6fMQH.js.map

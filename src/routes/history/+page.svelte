@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import openai from '$lib/openai';
+
 
 	import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
 	import { OpenAIEmbeddings } from "@langchain/openai";
