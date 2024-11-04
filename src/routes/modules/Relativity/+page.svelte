@@ -52,8 +52,21 @@
 	<h3>Inverse Lorentz</h3>
 	<p>Switch out x' and t' for x and t and switch the signs</p>
 	<p>{@html renderTextWithMathMode(`$$x = \\gamma (x'-vt')$$`)}</p>
-	<p>{@html renderTextWithMathMode(`$$t = \\gamma (t + \\frac{vx'}{c^2})$$`)}</p>
+		<p>{@html renderTextWithMathMode(`$$t = \\gamma (t + \\frac{vx'}{c^2})$$`)}</p>
 		</div>
+
+	<h1>Relativistic Addition of Velocity</h1>
+	<div>
+		<h3>Data Booklet Version</h3>
+		<h3>{@html renderTextWithMathMode(`$$u' = \\frac{u - v}{1 - \\frac{uv}{c^2}}$$`)}</h3>
+		<h3>Solving for u</h3>
+		<h3>{@html renderTextWithMathMode(`$$u = \\frac{u' + v}{1 + \\frac{u'v}{c^2}}$$`)}</h3>
+	</div>
+
+	<h1>Space Time Diagrams</h1>
+	<div>
+
+	</div>
 
 </div>
 

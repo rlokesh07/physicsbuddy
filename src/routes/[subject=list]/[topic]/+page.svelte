@@ -53,7 +53,7 @@
 		max-width: 60rem;
 		width: 90%;
 		justify-content: space-evenly;
-		background: #f3f3f3;
+
 	}
   a,
   p {
@@ -102,6 +102,6 @@
 		align-items: center;
 		border: 5px solid hsla(204, 41%, 25%, 1);
 		border-radius: 5px;
-      background: #f3f3f3;
+
 	}
 </style>
