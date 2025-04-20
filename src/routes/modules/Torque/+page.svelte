@@ -35,6 +35,36 @@
 
 		</div>
 	</div>
+	<div>
+		<h2>Torque</h2>
+		<p>Given a force F acting some distance r from a point of rotation at an angle, the torque is</p>
+		<p>{@html renderTextWithMathMode(`$$\\tau =Frsin\\theta$$`)}</p>
+		<div>
+			<h3>Center of Mass</h3>
+			<p>The center of where all the mass is concentrated</p>
+			<h3>Center of Gravity</h3>
+			<p>The center of the force of gravity</p>
+		</div>
+		<div>
+			<h3>Moment of Inertia</h3>
+			<p>The measure of angular inertia or the resistance to change</p>
+			<p>{@html renderTextWithMathMode(`The moment of inertia for a single point is $$I = mr^2$$`)}</p>
+			<p>{@html renderTextWithMathMode(`The moment of inertia for a system is $$I = \\sum_i m_ir_i^2$$`)}</p>
+
+		</div>
+	</div>
+	<div>
+		<h2>Rotational Momentum</h2>
+		<p>{@html renderTextWithMathMode(`$$L = I\\omega$$`)}</p>
+		<p>Just like translational inertia, this must always be conserved</p>
+		<p>This is typically used in questions where the radius of a point changes</p>
+
+	</div>
+	<div>
+		<h2>Rotational Kinetic Energy</h2>
+		<p>{@html renderTextWithMathMode(`$$E_k = \\frac{1}{2}I\\omega^2 = \\frac{L^2}{2I}$$`)}</p>
+		<p>Where L is the rotational momentum</p>
+	</div>
 </div>
 <style>
     div {
