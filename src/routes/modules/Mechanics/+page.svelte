@@ -44,23 +44,6 @@
 </div>
 
 
-<div>
-	<div>
-		<h2>Velocity-Time Graph</h2>
-		<div>
-			<p>The area under a velocity-time graph is displacement.</p>
-			<p><img src="/path/to/your/velocity-time-graph.png" alt="Velocity-Time Graph" /></p>
-		</div>
-	</div>
-
-	<div>
-		<h2>Acceleration-Time Graph</h2>
-		<div>
-			<p>The area under an acceleration-time graph is velocity.</p>
-			<p><img src="/path/to/your/acceleration-time-graph.png" alt="Acceleration-Time Graph" /></p>
-		</div>
-	</div>
-</div>
 
 <div>
 	<h1>Free fall</h1>
