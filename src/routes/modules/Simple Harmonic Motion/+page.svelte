@@ -67,9 +67,7 @@
 			<p>{@html renderTextWithMathMode(`$$T=2\\pi \\sqrt{\\frac{L}{g}}$$`)}</p>
 		</div>
 	</div>
-	<div>
-		<h2></h2>
-	</div>
+
 
 </div>
 <style>
