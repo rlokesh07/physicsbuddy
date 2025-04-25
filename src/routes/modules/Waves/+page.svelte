@@ -7,6 +7,9 @@
 	<div class="typeOfWaves">
 		<h2>Types of Waves</h2>
 		<p>Traveling Waves: Waves that propagate through a medium</p>
+		<div>
+			<p>We know that traveling waves have energy because the electromagnetic waves from the sun heats up the earth</p>
+		</div>
 		<p>Mechanical Waves: The only type of wave that needs a medium to run through</p>
 		<p>Transverse Waves: Particles of the medium that vibrate perpendicular to the direction of the wave's velocity</p>
 		<p>Longitudinal Waves: Particles of the wave vibrate parallel to the direction of the wave's velocity</p>
@@ -41,6 +44,8 @@
 		<p>Anti-Node: a place in the standing wave where displacement is maximum</p>
 		<img src="https://cdn.kastatic.org/ka-perseus-images/e45c33bb944a2f5fd7a853d18fd6f15d05cd0adf.png"/>
 		<p>A standing wave is created due to the superposition caused by the reflection fo the wave</p>
+		<p>{@html renderTextWithMathMode(`$$L = n(\\frac{\\lambda}{2}) $$`)}</p>
+
 	</div>
 
 	<div class="graphicalAnalysis">

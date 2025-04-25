@@ -12,6 +12,9 @@
 		<h2>Refraction</h2>
 		<p>When light travels between two materials, its wavelength and speed change, but the frequency does not. It changes with reference to its index of refraction, n</p>
 		<p>{@html renderTextWithMathMode(`$$\\lambda_n = \\frac{\\lambda}{n}$$ where $$\\lambda$$ is the wavelength in a vacuum`)}</p>
+		<p>Additionally, its angle will also change according to the indexes of the two mediums</p>
+		<p>{@html renderTextWithMathMode(`$$n_1 \\sin(\\theta_1) = n_2 \\sin(\\theta_2)$$`)}</p>
+
 	</div>
 	<div>
 		<h2>Wavefronts</h2>
@@ -23,6 +26,7 @@
 		<p>When a wave passes through a smaller opening, the light wave will bend through a concept called diffraction</p>
 		<img src="https://openstax.org/apps/archive/20250226.165223/resources/a9f36df31fe15b66e6c48e2b739aa3af5e85a5de">
 	</div>
+
 	<div>
 		<h2>Single Slit Interference</h2>
 		<p>Even with just one slit, light waves still interfere with themselves due to diffraction. The light spreading from different parts of the slit overlaps and creates a pattern of bright and dark fringes on a screen.</p>
@@ -34,7 +38,6 @@
 		<h2>Double Slit Interference</h2>
 		<p>When you have two slits, with a light shining through them into a wall, the two diffractions will create moments of constructive and destructive interference on the wall</p>
 		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xxybJGvRK5_zg3k6RUpKqXO9ftnx4263Og&s">
-		<p>{@html renderTextWithMathMode(`Using trigonometry, we can find the peaks of the interference as $$d \\sin(\\theta) = m \\lambda$$, where m is a integer representing the peak number/order. Note this pattern is symmetrical `)}</p>
 		<p>{@html renderTextWithMathMode(`Using trigonometry, we can find the peaks of the interference as $$d \\sin(\\theta) = m \\lambda$$, where m is a integer representing the peak number/order. Note this pattern is symmetrical `)}</p>
 
 	</div>
