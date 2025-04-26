@@ -147,7 +147,7 @@
 </div>
 <style>
     div{
-        padding-bottom: 80px;
+        padding-bottom: 40px;
         padding-left: 70px;
     }
     img{

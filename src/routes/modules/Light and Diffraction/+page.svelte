@@ -41,6 +41,19 @@
 		<p>{@html renderTextWithMathMode(`Using trigonometry, we can find the peaks of the interference as $$d \\sin(\\theta) = m \\lambda$$, where m is a integer representing the peak number/order. Note this pattern is symmetrical `)}</p>
 
 	</div>
+	<div>
+		<h2>The Photoelectric Effect</h2>
+		<p>When photons hit a surface, depending on the frequency there can be electrons emmited</p>
+		<p>{@html renderTextWithMathMode(`Below a certain frequency $$f_0$$ no electrons are emitted and above that the $$E_k$$ if the electrons is proportional to the frequency of incoming light. Additionally, increasing the intensity of light does nothing to the kinetic energy of the electrons`)}</p>
+		<p>{@html renderTextWithMathMode(`$$E_{max} = hf - \\Phi$$`)}</p>
+		<p>{@html renderTextWithMathMode(`$$\\Phi$$ is the energy needed to eject electrons. `)}</p>
+		<div>
+			<h3>The de Broglie Wavelength</h3>
+			<p>The de Broglie Wavelength is the wavelength associated with a moving particle, representing how it moves like a wave</p>
+			<p>{@html renderTextWithMathMode(`$$\\lambda = \\frac{h}{p}$$`)}</p>
+
+		</div>
+	</div>
 </div>
 <style>
     div {

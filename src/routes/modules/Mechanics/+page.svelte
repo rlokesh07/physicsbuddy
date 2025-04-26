@@ -135,17 +135,21 @@
 		<div>
 			<h2>Drag Force Equation</h2>
 			<br>
-			<p>{@html renderTextWithMathMode(`$$F_d = \\frac{1}{2} C_d \\rho A v^2$$`)}</p>
+			<p>{@html renderTextWithMathMode(`$$F_d = 6 \\pi \\eta r v$$`)}</p>
 			<p>
 				Drag force opposes the motion of an object moving through a fluid (like air or water).
 			</p>
-
+			<p>
+				The drag force originates from Newton's third law, where pushing the air molecules in one direction causes a force in the opposite direction
+			</p>
 				<p>{@html renderTextWithMathMode(`<strong>$$F_d$$</strong> = Drag force (N)`)}</p>
-				<p>{@html renderTextWithMathMode(`<strong>$$C_d$$</strong> = Drag coefficient (unitless, depends on shape)`)}</p>
-				<p>{@html renderTextWithMathMode(`<strong>$$\\rho$$</strong> = Fluid density (kg/m³)`)}</p>
-				<p>{@html renderTextWithMathMode(`<strong>$$A$$</strong> = Cross-sectional area (m²)`)}</p>
+				<p>{@html renderTextWithMathMode(`<strong>$$\\eta$$</strong> = coefficient of viscosity`)}</p>
+				<p>{@html renderTextWithMathMode(`<strong>$$r$$</strong> = radius (m)`)}</p>
 				<p>{@html renderTextWithMathMode(`<strong>$$v$$</strong> = Velocity of the object relative to fluid (m/s)`)}</p>
-
+			<div>
+				<h3>Terminal Velocity</h3>
+				<p>Terminal velocity is the maximum speed that an object to reach while in free fall. To calculate it set the gravitational force equal to the drag force</p>
+			</div>
 		</div>
 		<div>
 			<h2>Buoyant Force Equation</h2>
