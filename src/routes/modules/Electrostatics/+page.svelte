@@ -35,6 +35,10 @@
 		<div>
 			<p>The electric field strength is determined by the force per unit charge of a small test particle</p>
 			<h4>{@html renderTextWithMathMode('$$E = \\frac{F}{q_{test}}$$')}</h4>
+			<p>The electric field strength between two charged plates is</p>
+			<h4>{@html renderTextWithMathMode('$$E = \\frac{V}{d}$$')}</h4>
+			<p>Where E is the field strength, V is the voltage difference, and d is the distance between the plates</p>
+
 		</div>
 		<h2>Electric Potential</h2>
 		<div>
